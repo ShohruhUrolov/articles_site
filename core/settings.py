@@ -17,19 +17,18 @@ import os
 # Build paths inside the project like this: BASE_DIR / 'subdir'.
 BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 
-env = environ.Env()
 
 
 # Take environment variables from .env file
-environ.Env.read_env(os.path.join(BASE_DIR, '.env'))
+
 
 # False if not in os.environ because of casting above
-DEBUG = env('DEBUG', default=False)
+DEBUG = False
 # Quick-start development settings - unsuitable for production
 # See https://docs.djangoproject.com/en/5.0/howto/deployment/checklist/
 
 # SECURITY WARNING: keep the secret key used in production secret!
-SECRET_KEY = env('SECRET_KEY')
+SECRET_KEY = 'django-insecure-072=a+++rh27!-g!ow4pqg&#4!-h0_99)yvqm)lyf^k#cwhup_'
 
 # SECURITY WARNING: don't run with debug turned on in production!
 
