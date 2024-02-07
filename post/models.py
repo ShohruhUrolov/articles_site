@@ -31,8 +31,6 @@ class Post(models.Model):
 
 
 class Comment(models.Model):
-    class Meta:
-        db_table = 'comments'
 
     post = models.ForeignKey(Post, related_name='comments', on_delete=models.CASCADE)
     comment = models.CharField(max_length=200)
