@@ -18,7 +18,5 @@ class CustomUser(AbstractUser):
         default='Male'
     )
 
-    class Meta:
-        db_table = 'users'
 
 
