@@ -12,11 +12,10 @@ https://docs.djangoproject.com/en/5.0/ref/settings/
 
 from pathlib import Path
 import os
-import environ
 import os
 # Build paths inside the project like this: BASE_DIR / 'subdir'.
 BASE_DIR = Path(__file__).resolve().parent.parent
-
+CSRF_TRUSTED_ORIGINS = ['https://articles-site-v0s5.onrender.com', 'https://127.0.0.1:8080']
 
 
 # Take environment variables from .env file
