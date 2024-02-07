@@ -10,8 +10,6 @@ import post
 
 
 class Post(models.Model):
-    class Meta:
-        db_table = 'posts'
 
     objects = None
     title = models.CharField(max_length=130)
